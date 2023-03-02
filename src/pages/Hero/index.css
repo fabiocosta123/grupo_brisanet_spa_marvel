@@ -1,0 +1,27 @@
+body {
+    background: #c1c1c1;
+}
+
+.context {
+    display: flex;
+    align-items: center;
+    background: #c0c0c0;
+    padding-left: 8.5rem;
+    height: 5rem;
+    width: 100%;
+}
+
+.nav li {
+    
+    list-style: none;
+}
+
+.nav ul {
+    display: flex;
+       
+}
+
+.account {
+    text-align: center;
+    margin-left: 50rem;
+}
