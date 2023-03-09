@@ -32,24 +32,23 @@ export default Hero;*/
 
 import React from "react";
 
-import logo from "../../img/logo-marvel.png";
 import "./Hero.css";
 
 const Hero = () => {
     return (
         <div className="container">
-           <img src={logo} />
+          <img  src="https://i1.wp.com/www.tripwiremagazine.co.uk/wp-content/uploads/2017/07/marvel-logo.jpg" alt="Logo Marvel"/>
 
-           <div className="content_header">
-            <h3 className="px-8">Home</h3>
-            <h3 className="cursor-pointer">Comics</h3>
-                <div className="relative">
-                    <input className="mx-64 border rounded-lg flex absolute" placeholder="Comics" />
+           <div className="content">
+            <h3>Home</h3>
+            <h3>Comics</h3>
+                <div className="content_header">
+                    <input className="content_input" placeholder="Comics" />
                     <button className="btn_investigate">Pesquisar</button>
                 </div>
                        
            </div>
-           <div className="relative my-16 mx-10">
+           <div>
             <button>Sair</button>
            </div>
         </div>

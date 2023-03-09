@@ -45,7 +45,7 @@
     width: 100%;
     height: 10rem;
     padding-top: 3rem;
-    margin-top: .8rem;
+    margin-top: .1rem;
     background-image: url("../../img/wallpaper.jpg");
     
     
@@ -53,18 +53,49 @@
     
 }
 
-.content_header {
+.content{
     display: flex;
+    position: absolute;
     padding-left: 25rem;
     padding-top: 2rem;
     
     
 }
 
+img{
+    height: 10rem;
+    margin-top: -3rem;
+    margin-left: 2rem;
+}
+
+
+
+h3 {
+    padding-left: .9rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+h3:hover {
+    color: #c1c1c1;
+}
+input {
+    margin-left: 10rem;
+    border-radius: .5rem;
+    height: 1.5rem;
+    width: 15rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
 button {
-    color: #fff;
-    width: 5rem;
+    margin-top: 2rem;
+    margin-left: 63rem;
+    color: #000;
+    width: 7rem;
+    height: 1.5rem;
     border-radius: 3rem;
+    font-size: 1.2rem;
     
 }
 
@@ -80,10 +111,9 @@ button:focus {
 }
 
 .btn_investigate {
-    margin-left: 28rem;
-    margin-top: -10rem;
+    position: relative;
+    margin-left: 1rem;
+    margin-top: -24rem;
+    height: 1.5rem;
 }
 
-input {
-    text-align: center;
-}
