@@ -4,6 +4,7 @@ import {FiChevronDown} from "react-icons/fi";
 
 import { Container, Card, CardList, ButtonMore  } from "../../pages/Comics/styles"
 
+
 interface ResponseData {
     id: string;
     name: string;
@@ -43,7 +44,7 @@ const Comics: React.FC = () => {
         }    
     }, [comics])
     return (
-        <>
+        <div id="container">
             <Container>
                <CardList>
                 {comics.map(comic => {
@@ -68,7 +69,7 @@ const Comics: React.FC = () => {
                     
                </ButtonMore>
             </Container>
-        </>
+        </div>
     )
 }
 

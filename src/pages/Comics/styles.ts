@@ -16,6 +16,8 @@ export const CardList = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 3rem;
+    
 `;
 
 const urlImg = (props: ThumbnailData) => `${props.thumbnail.path}.${props.thumbnail.extension}`;
@@ -24,8 +26,9 @@ export const Card = styled.div`
     background: #c0c0c0;
     height: 450px;
     width: 300px;
-    marign: 10px;
-    border-radius: 5px;
+    marign: 10rem;
+    
+    border-radius: .8rem;
     overflow: hidden;
     box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.3);
 
@@ -40,7 +43,7 @@ export const Card = styled.div`
         width: 100%;
         background: url(${urlImg}) no-repeat center;
         background-size: cover;
-
+        
         transition: all 1s;
     }
 
