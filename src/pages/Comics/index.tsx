@@ -5,7 +5,7 @@ import {FiChevronDown} from "react-icons/fi";
 import { Container, Card, CardList, ButtonMore  } from "../../pages/Comics/styles"
 
 
-interface ResponseData {
+export interface ResponseData {
     id: string;
     name: string;
     description: string;
@@ -22,7 +22,7 @@ const Comics: React.FC = () => {
 
         api.get("/comics")
         .then(response => { 
-             console.log(response.data);
+             
             setComics(response.data.data.results);
            
         })
@@ -42,7 +42,9 @@ const Comics: React.FC = () => {
         } catch(err){
             console.log(err);
         }    
-    }, [comics])
+    }, [comics]);
+
+    
     return (
         <div id="container">
             <Container>

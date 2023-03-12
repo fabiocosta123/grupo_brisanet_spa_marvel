@@ -3,6 +3,7 @@ import React from 'react';
 import Hero from "./pages/Hero/index";
 import Comics from "../src/pages/Comics/index";
 import GlobalStyle from "./styles/global";
+import GoogleMaps from './pages/Google/googleMaps';
 
 
 
@@ -13,6 +14,7 @@ const App: React.FC = () =>{
      <Hero />
      <Comics />
      <GlobalStyle/>
+     <GoogleMaps />
     </div>
   );
 }

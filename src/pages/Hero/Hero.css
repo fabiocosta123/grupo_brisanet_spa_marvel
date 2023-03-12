@@ -83,7 +83,7 @@ input {
     margin-left: 10rem;
     border-radius: .5rem;
     height: 1.5rem;
-    width: 15rem;
+    width: 25rem;
     text-align: center;
     font-size: 1.2rem;
 }
@@ -96,6 +96,7 @@ button {
     height: 1.5rem;
     border-radius: 3rem;
     font-size: 1.2rem;
+    cursor: pointer;
     
 }
 
