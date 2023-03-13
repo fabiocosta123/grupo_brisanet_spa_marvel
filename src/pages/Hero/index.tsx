@@ -1,8 +1,10 @@
 import React from "react";
 
+
 import { ResponseData } from "../Comics";
 import api from "../../services/api";
 import "./Hero.css";
+
 
 
 
@@ -11,6 +13,10 @@ const Hero = () => {
    const [search, setSearch] = React.useState("")
 
    const [comics, setComics] = React.useState<ResponseData[]>([]); 
+   
+
+
+
 
     React.useEffect(() => {
 
@@ -21,9 +27,11 @@ const Hero = () => {
            
         })
         .catch(err => console.log(err))
-    }, []);
+    }, [comics]);
 
-    
+    const handleClick = () => {
+        
+    }
 
     
     
@@ -41,7 +49,7 @@ const Hero = () => {
                        
            </div>
            <div>
-            <button>Sair</button>
+            <button onClick={handleClick}>Sair</button>
            </div>
         </div>
         

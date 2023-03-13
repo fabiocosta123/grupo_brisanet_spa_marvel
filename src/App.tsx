@@ -7,6 +7,7 @@ import GoogleMaps from './pages/Google/googleMaps';
 
 
 
+
 const App: React.FC = () =>{
 
   return (
@@ -15,7 +16,7 @@ const App: React.FC = () =>{
      <Comics />
      <GlobalStyle/>
      <GoogleMaps />
-    </div>
+     </div>
   );
 }
 
