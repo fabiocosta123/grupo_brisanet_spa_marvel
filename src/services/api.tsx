@@ -9,8 +9,8 @@ const hash = md5(ts + privateKey + publicKey);
 
 
 const api = axios.create({
-   baseURL: "http://gateway.marvel.com/v1/public/",
-   
+   //baseURL: "http://gateway.marvel.com/v1/public/",
+   baseURL: "https://grupo-brisanet-spa-marvel.vercel.app/",
     params: {
         apikey: publicKey,
         ts,
