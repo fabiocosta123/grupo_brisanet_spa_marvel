@@ -6,10 +6,11 @@ const privateKey = "e404de82f7e2c4f95f89fdeb323754129fbc6228";
 const ts = Number(new Date());
 
 const hash = md5(ts + privateKey + publicKey);
-const port = process.env.PORT || 3000;
+
 
 const api = axios.create({
-    baseURL: "http://gateway.marvel.com/v1/public/",
+   baseURL: "http://gateway.marvel.com/v1/public/",
+   
     params: {
         apikey: publicKey,
         ts,
